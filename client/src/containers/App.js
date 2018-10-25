@@ -6,6 +6,7 @@ import HomeContainer from '../containers/HomeContainer';
 import NewsContainer from '../containers/NewsContainer';
 import TeamContainer from '../containers/TeamContainer';
 import ScheduleContainer from '../containers/ScheduleContainer';
+import FooterContainer from '../containers/FooterContainer';
 import {getUserAgentInfo} from "../utils/app-utils";
 import "../styles/App.css";
 
@@ -31,12 +32,13 @@ class App extends Component {
 														<NavContainer/>
 												</div>
 												<div className="siteContent">
-														<Route exact path="/home" component={HomeContainer}/>
+														<Route exact path="/" component={HomeContainer}/>
 														<Route exact path="/schedule" component={ScheduleContainer}/>
 														<Route exact path="/team" component={TeamContainer}/>
 														<Route exact path="/news" component={NewsContainer}/>
 														<Route exact path="/contact" component={ContactContainer}/>
 												</div>
+												<FooterContainer/>
 										</React.Fragment>
 								</Router>
 						</div>

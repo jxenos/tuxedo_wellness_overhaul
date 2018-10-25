@@ -1,14 +1,17 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import Logo from '../images/logo.png';
 
 export default() => {
 		return (
 				<React.Fragment>
-						<div className="logoContainer">Insert logo here</div>
+						<div className="logoContainer">
+								<img className="navLogo" src={Logo} alt="tuxedo_wellness_logo"/>
+						</div>
 						<div className="navMenuContainer">
 								<ul>
 										<li>
-												<Link className="nav-link" to="/home">
+												<Link className="nav-link" to="/">
 														{" "}
 														Home
 												</Link>

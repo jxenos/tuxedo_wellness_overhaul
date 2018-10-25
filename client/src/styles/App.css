@@ -1,12 +1,15 @@
+@import url("./nav.css");
+
 html,
 body {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .appContainer {
-	padding: 0 15px;
-	height: 100%;
-	width: 100%;
-	display: grid;
+  padding: 0 15px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
 }
