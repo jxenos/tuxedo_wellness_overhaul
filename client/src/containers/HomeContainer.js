@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Home from '../components/Home';
+import Home from '../components/layout/Home';
 
 export default class HomeContainer extends Component {
   render() {

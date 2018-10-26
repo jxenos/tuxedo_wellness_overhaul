@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Team from '../components/Team'
+import Team from '../components/layout/Team'
 
 export default class TeamContainer extends Component {
   render() {
