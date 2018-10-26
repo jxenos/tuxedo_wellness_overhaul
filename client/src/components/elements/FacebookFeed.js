@@ -2,14 +2,14 @@ import React, {Component} from 'react'
 
 export default class FacebookFeed extends Component {
   componentDidMount() {
-    this.loadFbApi();
+    // this.loadFbApi();
   };
 
   loadFbApi = () => {
     window.fbAsyncInit = function () {
       window
         .FB
-        .init({appId: '2025207844210842', autoLogAppEvents: true, xfbml: true, version: 'v3.2'});
+        .init({appId: 2025207844210842, autoLogAppEvents: true, xfbml: true, version: 'v3.2'});
       window
         .FB
         .api("/me/feed", function (response) {
@@ -37,7 +37,12 @@ export default class FacebookFeed extends Component {
 
   render() {
     return (
-      <div></div>
+      <iframe
+        className="facebookFeed"
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftuxedowellness%2F&tabs=timeline&width=500&height=531&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        scrolling="no"
+        frameborder="0"
+        allowTransparency="true"></iframe>
     )
   }
 }
